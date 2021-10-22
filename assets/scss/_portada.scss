@@ -1,0 +1,103 @@
+.portadaContainer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	background-image: url("../../img/portada.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 40em;
+	align-items: flex-end;
+
+	@media (max-width: 800px) {
+		background-image: url("../../img/portadamini.jpg");
+		align-items: center;
+	}
+
+	.custom-shape-divider-top-1630864600 {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+	}
+
+	.custom-shape-divider-top-1630864600 svg {
+		position: relative;
+		display: block;
+		width: calc(131% + 1.3px);
+		height: 49px;
+	}
+
+	.custom-shape-divider-top-1630864600 .shape-fill {
+		fill: #f25a38;
+	}
+
+	.custom-shape-divider-bottom-1630864817 {
+		position: relative;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+	}
+
+	.custom-shape-divider-bottom-1630864817 svg {
+		position: relative;
+		display: block;
+		width: calc(112% + 1.3px);
+		height: 38px;
+	}
+
+	.custom-shape-divider-bottom-1630864817 .shape-fill {
+		fill: #f5dfd2;
+	}
+
+	.portadaInfo {
+		display: flex;
+		flex-direction: column;
+		width: 40%;
+		height: 40em;
+		margin-right: 4em;
+		justify-content: center;
+
+		@media (max-width: 800px) {
+			width: 70%;
+			justify-content: flex-end;
+			margin-right: 0;
+			margin-bottom: 1em;
+		}
+
+		h1 {
+			font-family: "Lobster", cursive;
+			color: $color-secundario;
+			font-size: 3rem;
+			margin-bottom: 0;
+			background: #57675d5e;
+			border-radius: 1em;
+			padding: 0 0.2em 0 0.2em;
+			width: fit-content;
+			filter: drop-shadow(0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.425));
+
+			@media (max-width: 800px) {
+				font-size: 2rem;
+			}
+		}
+
+		h2 {
+			font-family: "Nixie One", cursive;
+			font-size: 1.2rem;
+			line-height: 2rem;
+			color: $color-secundario;
+			filter: drop-shadow(0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.425));
+			background: #57675d5e;
+			border-radius: 1em;
+			padding: 0 0.2em 0 0.2em;
+
+			@media (max-width: 800px) {
+				font-size: 1rem;
+			}
+		}
+	}
+}

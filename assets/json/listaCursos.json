@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"nombre": "Curso: Posavasos en Resina Epoxi",
+		"desc": "En este taller te cuento que materiales son necesarios para trabajar con Resina Epoxi, la preparamos, le damos color y la aplicamos en unos cortes de fibrofácil para realizar Posavasos. Les aplicamos una segunda capa con glitter y los terminamos con corcho por detras. Listos para usar o regalar.",
+		"precio": 1200,
+		"img": "../img/curso1.jfif",
+		"cantidad": 1
+	},
+	{
+		"id": 2,
+		"nombre": "Curso: Abstracto para principiantes",
+		"desc": "En este Taller Online podrás realizar una obra abstracta original, partiendo desde la preparación de la base, hasta el acabado final. Elegiras los colores y el formato para adecuarla a tu ambiente.",
+		"precio": 1300,
+		"img": "../img/curso2.jfif",
+		"cantidad": 1
+	},
+	{
+		"id": 3,
+		"nombre": "Curso: Acrílicos fluidos - Pouring",
+		"desc": "En este TALLER ON-LINE de ACRILICOS FLUIDOS-POURING conocerás los materiales necesarios para esta técnica y sus reemplazos. Aprenderás a prepara las pintura con distintos Medium, y la Tecnica de FLIP CUP. Opciones de Silicona para las Células y finalmente el Secado y Barniz de cada obra.",
+		"precio": 1200,
+		"img": "../img/curso3.jfif",
+		"cantidad": 1
+	}
+]

@@ -1,0 +1,154 @@
+footer {
+	.custom-shape-divider-bottom-1630864817 {
+		position: relative;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+	}
+
+	.custom-shape-divider-bottom-1630864817 svg {
+		position: relative;
+		display: block;
+		width: calc(112% + 1.3px);
+		height: 38px;
+	}
+
+	.custom-shape-divider-bottom-1630864817 .shape-fill {
+		fill: #f25a38;
+	}
+
+	.footerContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		background-color: $color-primario;
+
+		@media (max-width: 800px) {
+			flex-direction: column-reverse;
+			align-items: center;
+		}
+
+		.footerDatos {
+			display: flex;
+			width: 40%;
+			flex-direction: column;
+			padding: 1rem;
+
+			@media (max-width: 800px) {
+				width: 80%;
+				align-items: center;
+			}
+
+			h4 {
+				display: flex;
+				font-family: "Nixie One", cursive;
+				color: $color-secundario;
+				font-size: 1rem;
+				font-weight: bold;
+				margin-top: 0.5em;
+				margin-bottom: 0.5em;
+			}
+
+			h5 {
+				display: flex;
+				font-family: "Nixie One", cursive;
+				color: $color-secundario;
+				font-size: 0.9rem;
+				font-weight: initial;
+				margin-top: 0.5em;
+				margin-bottom: 1em;
+			}
+
+			.icons {
+				display: flex;
+				width: fit-content;
+				height: fit-content;
+				justify-content: flex-start;
+
+				a {
+					color: $color-secundario;
+					font-size: 1.5em;
+					text-decoration: none;
+					transition: 0.3s;
+					display: flex;
+					height: fit-content;
+					align-items: center;
+					margin-right: 1em;
+					cursor: pointer;
+
+					&:hover {
+						color: $color-terciario;
+					}
+				}
+			}
+		}
+
+		.footerNewsletter {
+			display: flex;
+			width: 50%;
+			flex-direction: column;
+			padding: 1rem;
+
+			@media (max-width: 800px) {
+				width: 100%;
+				align-items: center;
+			}
+
+			h4 {
+				display: flex;
+				font-family: "Nixie One", cursive;
+				color: $color-secundario;
+				font-size: 1rem;
+				font-weight: bold;
+				margin-top: 0.5em;
+				margin-bottom: 0.5em;
+			}
+
+			form {
+				display: flex;
+				height: 2rem;
+				align-items: center;
+
+				@media (max-width: 800px) {
+					width: 90%;
+					justify-content: center;
+				}
+
+				input {
+					width: 50%;
+					height: 2rem;
+					border-radius: 0.5rem;
+					color: $color-terciario;
+					border-color: white;
+					background-color: white;
+					font-family: "Nixie One", cursive;
+					font-weight: bold;
+				}
+
+				.footerNewsletterBoton {
+					display: flex;
+					cursor: pointer;
+					background-color: $color-terciario;
+					height: fit-content;
+					font-family: "Nixie One", cursive;
+					font-size: 1rem;
+					padding: 0.5rem;
+					color: $color-secundario;
+					margin-left: 0.5rem;
+					text-decoration: none;
+					font-weight: bold;
+					transition: 0.4s;
+
+					&:hover {
+						background-color: $color-secundario;
+						color: $color-terciario;
+					}
+				}
+			}
+		}
+	}
+}

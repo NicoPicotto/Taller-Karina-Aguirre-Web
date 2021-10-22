@@ -1,0 +1,83 @@
+.aboutMeContainer {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	height: fit-content;
+	justify-content: space-evenly;
+	margin-bottom: 5em;
+	margin-top: 3em;
+
+	.aboutMeCard {
+		display: flex;
+		text-decoration: none;
+		width: 70%;
+		height: 20em;
+		align-items: center;
+		background-color: $color-terciario;
+		border-radius: 2em;
+		overflow: hidden;
+		transition: 0.4s;
+
+		@media (max-width: 800px) {
+			flex-direction: column;
+			height: fit-content;
+		}
+
+		&:hover {
+			filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.425));
+		}
+
+		img {
+			display: flex;
+			width: fit-content;
+			height: 100%;
+
+			@media (max-width: 800px) {
+				width: 100%;
+			}
+		}
+
+		.aboutInfo {
+			display: flex;
+			flex-direction: column;
+			justify-content: left;
+			padding: 2em;
+			width: 100%;
+
+			@media (max-width: 800px) {
+				align-items: center;
+				justify-content: center;
+			}
+
+			h3 {
+				display: flex;
+				font-family: "Lobster", cursive;
+				color: $color-secundario;
+				font-size: 2.5rem;
+				font-weight: initial;
+				margin-top: 0;
+				margin-bottom: 0;
+
+				@media (max-width: 800px) {
+					padding-left: 0.5em;
+					padding-right: 0.5em;
+				}
+			}
+
+			h4 {
+				display: flex;
+				font-family: "Nixie One", cursive;
+				color: $color-secundario;
+				font-size: 1.2rem;
+				line-height: 1.4em;
+				margin-top: 0.5em;
+				margin-bottom: 0;
+
+				@media (max-width: 800px) {
+					padding-left: 1em;
+					padding-right: 1em;
+				}
+			}
+		}
+	}
+}

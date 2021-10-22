@@ -1,0 +1,1426 @@
+nav {
+  background-color: #f25a38;
+  color: #f5dfd2;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  nav .mainMenu {
+    height: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f25a38;
+    transition: top 1s ease;
+    display: none;
+  }
+}
+nav .mainMenu li {
+  display: flex;
+  align-items: center;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  margin-right: 1em;
+  text-decoration: none;
+  color: #f5dfd2;
+  font-size: 1.5em;
+  font-family: "Lobster", cursive;
+  transition: 0.3s;
+}
+nav .mainMenu li a i {
+  display: flex;
+}
+nav .mainMenu li a i h3 {
+  margin-left: 0.5em;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 0.5em;
+  font-family: "Nixie One", cursive;
+}
+nav .mainMenu li a:hover {
+  color: #57675d;
+}
+@media (max-width: 800px) {
+  nav .mainMenu li a:hover {
+    background: none;
+    color: #57675d;
+    font: 1.5em;
+  }
+}
+nav .mainMenu .closeMenu {
+  font-size: 2em;
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+  }
+}
+nav .mainMenu .icons i {
+  font-size: 1.5em;
+  display: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+nav .mainMenu .icons i:hover {
+  color: #57675d;
+}
+@media (max-width: 800px) {
+  nav .mainMenu .icons i {
+    display: inline-block;
+    margin: 0.5em;
+  }
+}
+nav .openMenu {
+  font-size: 2em;
+  margin: 1em;
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  nav .openMenu {
+    display: block;
+  }
+}
+nav .logo {
+  display: flex;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+}
+nav .logo img {
+  height: 4em;
+  transition: 0.4s;
+}
+nav .logo img:hover {
+  filter: drop-shadow(0 0 0.3rem rgba(0, 0, 0, 0.425));
+}
+
+body {
+  background-color: #f5dfd2;
+  margin: 0;
+  padding: 0;
+}
+
+.portadaContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-image: url("../../img/portada.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 40em;
+  align-items: flex-end;
+}
+@media (max-width: 800px) {
+  .portadaContainer {
+    background-image: url("../../img/portadamini.jpg");
+    align-items: center;
+  }
+}
+.portadaContainer .custom-shape-divider-top-1630864600 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.portadaContainer .custom-shape-divider-top-1630864600 svg {
+  position: relative;
+  display: block;
+  width: calc(131% + 1.3px);
+  height: 49px;
+}
+.portadaContainer .custom-shape-divider-top-1630864600 .shape-fill {
+  fill: #f25a38;
+}
+.portadaContainer .custom-shape-divider-bottom-1630864817 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.portadaContainer .custom-shape-divider-bottom-1630864817 svg {
+  position: relative;
+  display: block;
+  width: calc(112% + 1.3px);
+  height: 38px;
+}
+.portadaContainer .custom-shape-divider-bottom-1630864817 .shape-fill {
+  fill: #f5dfd2;
+}
+.portadaContainer .portadaInfo {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 40em;
+  margin-right: 4em;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .portadaContainer .portadaInfo {
+    width: 70%;
+    justify-content: flex-end;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+}
+.portadaContainer .portadaInfo h1 {
+  font-family: "Lobster", cursive;
+  color: #f5dfd2;
+  font-size: 3rem;
+  margin-bottom: 0;
+  background: #57675d5e;
+  border-radius: 1em;
+  padding: 0 0.2em 0 0.2em;
+  width: fit-content;
+  filter: drop-shadow(0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.425));
+}
+@media (max-width: 800px) {
+  .portadaContainer .portadaInfo h1 {
+    font-size: 2rem;
+  }
+}
+.portadaContainer .portadaInfo h2 {
+  font-family: "Nixie One", cursive;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #f5dfd2;
+  filter: drop-shadow(0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.425));
+  background: #57675d5e;
+  border-radius: 1em;
+  padding: 0 0.2em 0 0.2em;
+}
+@media (max-width: 800px) {
+  .portadaContainer .portadaInfo h2 {
+    font-size: 1rem;
+  }
+}
+
+.shopCardsContainer {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: space-evenly;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+}
+.shopCardsContainer .cardBox {
+  display: flex;
+  text-decoration: none;
+  width: 25em;
+  flex-direction: column;
+  height: 45;
+  align-items: center;
+  background-color: #f25a38;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-bottom: 1em;
+  border-radius: 2em;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.4s;
+}
+.shopCardsContainer .cardBox:hover {
+  background-color: #57675d;
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.425));
+  transform: scale(1.01);
+}
+.shopCardsContainer .cardBox img {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+}
+.shopCardsContainer .cardBox h3 {
+  display: flex;
+  font-family: "Lobster", cursive;
+  color: #f5dfd2;
+  font-size: 2rem;
+  font-weight: initial;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.shopCardsContainer .cardBox h4 {
+  display: flex;
+  font-family: "Nixie One", cursive;
+  color: #f5dfd2;
+  font-size: 1.2rem;
+  font-weight: initial;
+  width: 90%;
+  margin-top: 0;
+}
+
+footer .custom-shape-divider-bottom-1630864817 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+footer .custom-shape-divider-bottom-1630864817 svg {
+  position: relative;
+  display: block;
+  width: calc(112% + 1.3px);
+  height: 38px;
+}
+footer .custom-shape-divider-bottom-1630864817 .shape-fill {
+  fill: #f25a38;
+}
+footer .footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #f25a38;
+}
+@media (max-width: 800px) {
+  footer .footerContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+footer .footerContainer .footerDatos {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  padding: 1rem;
+}
+@media (max-width: 800px) {
+  footer .footerContainer .footerDatos {
+    width: 80%;
+    align-items: center;
+  }
+}
+footer .footerContainer .footerDatos h4 {
+  display: flex;
+  font-family: "Nixie One", cursive;
+  color: #f5dfd2;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+footer .footerContainer .footerDatos h5 {
+  display: flex;
+  font-family: "Nixie One", cursive;
+  color: #f5dfd2;
+  font-size: 0.9rem;
+  font-weight: initial;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+footer .footerContainer .footerDatos .icons {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  justify-content: flex-start;
+}
+footer .footerContainer .footerDatos .icons a {
+  color: #f5dfd2;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: 0.3s;
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  margin-right: 1em;
+  cursor: pointer;
+}
+footer .footerContainer .footerDatos .icons a:hover {
+  color: #57675d;
+}
+footer .footerContainer .footerNewsletter {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  padding: 1rem;
+}
+@media (max-width: 800px) {
+  footer .footerContainer .footerNewsletter {
+    width: 100%;
+    align-items: center;
+  }
+}
+footer .footerContainer .footerNewsletter h4 {
+  display: flex;
+  font-family: "Nixie One", cursive;
+  color: #f5dfd2;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+footer .footerContainer .footerNewsletter form {
+  display: flex;
+  height: 2rem;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  footer .footerContainer .footerNewsletter form {
+    width: 90%;
+    justify-content: center;
+  }
+}
+footer .footerContainer .footerNewsletter form input {
+  width: 50%;
+  height: 2rem;
+  border-radius: 0.5rem;
+  color: #57675d;
+  border-color: white;
+  background-color: white;
+  font-family: "Nixie One", cursive;
+  font-weight: bold;
+}
+footer .footerContainer .footerNewsletter form .footerNewsletterBoton {
+  display: flex;
+  cursor: pointer;
+  background-color: #57675d;
+  height: fit-content;
+  font-family: "Nixie One", cursive;
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: #f5dfd2;
+  margin-left: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.4s;
+}
+footer .footerContainer .footerNewsletter form .footerNewsletterBoton:hover {
+  background-color: #f5dfd2;
+  color: #57675d;
+}
+
+.tiendaCursosContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: fit-content;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.tiendaCursosContainer .custom-shape-divider-top-1630864600 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.tiendaCursosContainer .custom-shape-divider-top-1630864600 svg {
+  position: relative;
+  display: block;
+  width: calc(131% + 1.3px);
+  height: 49px;
+}
+.tiendaCursosContainer .custom-shape-divider-top-1630864600 .shape-fill {
+  fill: #f25a38;
+}
+.tiendaCursosContainer .custom-shape-divider-bottom-1630864817 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.tiendaCursosContainer .custom-shape-divider-bottom-1630864817 svg {
+  position: relative;
+  display: block;
+  width: calc(112% + 1.3px);
+  height: 38px;
+}
+.tiendaCursosContainer .custom-shape-divider-bottom-1630864817 .shape-fill {
+  fill: #f5dfd2;
+}
+.tiendaCursosContainer .cardCursos {
+  display: flex;
+  text-decoration: none;
+  width: 70%;
+  height: 20em;
+  align-items: center;
+  background-color: #f25a38;
+  margin-top: 4em;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-bottom: 3em;
+  border-radius: 2em;
+  overflow: hidden;
+  transition: 0.4s;
+}
+@media (max-width: 900px) {
+  .tiendaCursosContainer .cardCursos {
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+.tiendaCursosContainer .cardCursos:hover {
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.425));
+}
+.tiendaCursosContainer .cardCursos .cardImgContainer {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  justify-content: left;
+  overflow: hidden;
+}
+@media (max-width: 900px) {
+  .tiendaCursosContainer .cardCursos .cardImgContainer {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.tiendaCursosContainer .cardCursos .cardImgContainer img {
+  display: flex;
+  height: 100%;
+}
+.tiendaCursosContainer .cardCursos .cardCursosInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 2em;
+  width: 50%;
+}
+@media (max-width: 900px) {
+  .tiendaCursosContainer .cardCursos .cardCursosInfo {
+    width: 90%;
+    justify-content: center;
+  }
+}
+.tiendaCursosContainer .cardCursos .cardCursosInfo h3 {
+  display: flex;
+  font-family: "Lobster", cursive;
+  color: #f5dfd2;
+  font-size: 2rem;
+  font-weight: initial;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.tiendaCursosContainer .cardCursos .cardCursosInfo h4 {
+  display: flex;
+  font-family: "Nixie One", cursive;
+  color: #f5dfd2;
+  font-size: 1.2rem;
+  font-weight: initial;
+}
+.tiendaCursosContainer .cardCursos .cardCursosComprar {
+  display: flex;
+  background-color: #57675d;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 900px) {
+  .tiendaCursosContainer .cardCursos .cardCursosComprar {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.tiendaCursosContainer .cardCursos .cardCursosComprar h2 {
+  display: flex;
+  font-family: "Lobster", cursive;
+  color: #f5dfd2;
+  font-size: 2rem;
+  font-weight: initial;
+}
+.tiendaCursosContainer .cardCursos .cardCursosComprar .cardCursosComprarBoton {
+  display: flex;
+  text-decoration: none;
+  font-family: "Nixie One", cursive;
+  padding: 0.5em;
+  font-size: 1.5rem;
+  color: #f5dfd2;
+  background-color: #f25a38;
+  transition: 0.4s;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .tiendaCursosContainer .cardCursos .cardCursosComprar .cardCursosComprarBoton {
+    margin-bottom: 1em;
+  }
+}
+.tiendaCursosContainer .cardCursos .cardCursosComprar .cardCursosComprarBoton:hover {
+  color: #f25a38;
+  background-color: #f5dfd2;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5dfd2;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.61);
+  margin: 15% auto;
+  padding: 2em;
+  border-radius: 2em;
+  text-align: center;
+  width: 40%;
+}
+@media (max-width: 1200px) {
+  .modal .modal-content {
+    width: 80%;
+  }
+}
+.modal .modal-content #mensajeConfirmacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nixie One", cursive;
+  color: #f5dfd2;
+  border-radius: 0.5em;
+  background-color: #f25a38;
+  font-size: 1vw;
+  font-weight: bolder;
+  padding: 0.2em;
+}
+@media (max-width: 1200px) {
+  .modal .modal-content #mensajeConfirmacion {
+    font-size: 3vw;
+  }
+}
+.modal .modal-content #cartContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.modal .modal-content #cartContainer .cartContainer {
+  display: flex;
+  width: 100%;
+  height: 7em;
+  margin-bottom: 1em;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f25a38;
+  border-radius: 1em;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.61);
+  overflow: hidden;
+}
+@media (max-width: 1200px) {
+  .modal .modal-content #cartContainer .cartContainer {
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+.modal .modal-content #cartContainer .cartContainer .cartImgContainer {
+  display: flex;
+  height: 100%;
+  width: 5em;
+  justify-content: center;
+  overflow: hidden;
+}
+@media (max-width: 1200px) {
+  .modal .modal-content #cartContainer .cartContainer .cartImgContainer {
+    height: 10em;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 5em;
+  }
+}
+.modal .modal-content #cartContainer .cartContainer .cartInfoContainer {
+  display: flex;
+  flex-direction: column;
+  width: 25em;
+  height: 90%;
+  justify-content: center;
+  padding: 0.5em;
+}
+@media (max-width: 1200px) {
+  .modal .modal-content #cartContainer .cartContainer .cartInfoContainer {
+    width: 90%;
+    align-items: center;
+    height: 3em;
+  }
+}
+.modal .modal-content #cartContainer .cartContainer .cartInfoContainer h2 {
+  display: flex;
+  font-family: "Nixie One", cursive;
+  color: #f5dfd2;
+  font-size: 1vw;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0.2em;
+}
+@media (max-width: 1200px) {
+  .modal .modal-content #cartContainer .cartContainer .cartInfoContainer h2 {
+    font-size: 3vw;
+  }
+}
+.modal .modal-content #cartContainer .cartContainer .cartInfoContainer h3 {
+  display: flex;
+  font-family: "Nixie One", cursive;
+  color: #f5dfd2;
+  font-size: 1vw;
+  font-weight: initial;
+  margin: 0;
+  padding: 0.2em;
+}
+@media (max-width: 1200px) {
+  .modal .modal-content #cartContainer .cartContainer .cartInfoContainer h3 {
+    font-size: 3vw;
+  }
+}
+.modal .modal-content #cartContainer .cartContainer .cartPrecioContainer {
+  display: flex;
+  width: 10em;
+  height: 100%;
+  background-color: #57675d;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+}
+@media (max-width: 1200px) {
+  .modal .modal-content #cartContainer .cartContainer .cartPrecioContainer {
+    width: 100%;
+  }
+}
+.modal .modal-content #cartContainer .cartContainer .cartPrecioContainer h2 {
+  display: flex;
+  font-family: "Nixie One", cursive;
+  color: #f5dfd2;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0.2em;
+}
+@media (max-width: 1200px) {
+  .modal .modal-content #cartContainer .cartContainer .cartPrecioContainer h2 {
+    font-size: 3vw;
+  }
+}
+.modal .modal-content #cartContainer .cartContainer .eliminarProducto {
+  display: flex;
+  height: 100%;
+  width: 5em;
+  align-items: center;
+  justify-content: center;
+  background-color: #f25a38;
+  transition: 0.3s;
+  text-decoration: none;
+}
+@media (max-width: 1200px) {
+  .modal .modal-content #cartContainer .cartContainer .eliminarProducto {
+    height: 2em;
+  }
+}
+.modal .modal-content .exitContainer {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .modal .modal-content .exitContainer {
+    flex-direction: column;
+  }
+}
+.modal .modal-content .exitContainer .precioTotal {
+  display: flex;
+  width: fit-content;
+}
+.modal .modal-content .exitContainer .precioTotal h2 {
+  display: flex;
+  font-family: "Nixie One", cursive;
+  color: #57675d;
+  font-size: 1.2vw;
+  font-weight: bolder;
+  padding: 0.2em;
+}
+@media (max-width: 1200px) {
+  .modal .modal-content .exitContainer .precioTotal h2 {
+    font-size: 3vw;
+  }
+}
+.modal .modal-content .exitContainer .confirmarCompra {
+  display: flex;
+  height: fit-content;
+  cursor: pointer;
+}
+.modal .modal-content .exitContainer .confirmarCompra a {
+  text-decoration: none;
+  padding: 0.5em;
+  display: flex;
+  border-radius: 0.5em;
+  font-family: "Nixie One", cursive;
+  color: #f5dfd2;
+  background-color: #57675d;
+  font-size: 1vw;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+@media (max-width: 1200px) {
+  .modal .modal-content .exitContainer .confirmarCompra a {
+    font-size: 3vw;
+    margin-bottom: 1em;
+  }
+}
+.modal .modal-content .exitContainer .confirmarCompra a:hover {
+  background-color: #f25a38;
+}
+.modal .modal-content .close {
+  display: flex;
+  width: fit-content;
+  background-color: red;
+  color: #f5dfd2;
+  font-family: "Nixie One", cursive;
+  border-radius: 0.5em;
+  font-size: 1vw;
+  font-weight: bold;
+  transition: 0.2s;
+  padding: 0.3em;
+}
+@media (max-width: 1200px) {
+  .modal .modal-content .close {
+    font-size: 3vw;
+  }
+}
+.modal .modal-content .close:hover, .modal .modal-content .close:focus {
+  background-color: #9b0303;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+section .custom-shape-divider-top-1630864600 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+section .custom-shape-divider-top-1630864600 svg {
+  position: relative;
+  display: block;
+  width: calc(131% + 1.3px);
+  height: 49px;
+}
+section .custom-shape-divider-top-1630864600 .shape-fill {
+  fill: #f25a38;
+}
+section .custom-shape-divider-bottom-1630864817 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+section .custom-shape-divider-bottom-1630864817 svg {
+  position: relative;
+  display: block;
+  width: calc(112% + 1.3px);
+  height: 38px;
+}
+section .custom-shape-divider-bottom-1630864817 .shape-fill {
+  fill: #f25a38;
+}
+section .formContainer {
+  display: flex;
+  background-color: #f25a38;
+  width: 100%;
+  height: 30em;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+section .formContainer form {
+  display: flex;
+  flex-direction: column;
+  background-color: #57675d;
+  padding: 1em;
+  width: 40%;
+  height: 90%;
+  border-radius: 2em;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  section .formContainer form {
+    width: 80%;
+  }
+}
+section .formContainer form .formInput {
+  width: 80%;
+  height: 1.5em;
+  outline: none;
+  border-radius: 0.5em;
+  margin-bottom: 0.5em;
+  font-family: "Nixie One", cursive;
+  color: #57675d;
+  font-size: 1rem;
+  padding: 0.5em;
+  background-color: #f5dfd2;
+  border: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+section .formContainer form .formTextArea {
+  width: 80%;
+  height: 15em;
+  outline: none;
+  border-radius: 0.5em;
+  margin-bottom: 0.5em;
+  font-family: "Nixie One", cursive;
+  color: #57675d;
+  font-size: 1rem;
+  padding: 0.5em;
+  background-color: #f5dfd2;
+  border: none;
+  font-weight: bold;
+}
+section .formContainer form .formSubmit {
+  font-family: "Lobster", cursive;
+  color: #57675d;
+  border: none;
+  margin-top: 0.5em;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.5em;
+  background-color: #f5dfd2;
+  cursor: pointer;
+  transition: 0.2s;
+}
+section .formContainer form .formSubmit:hover {
+  background-color: #f25a38;
+  color: #f5dfd2;
+}
+section .formContainer form h2 {
+  font-family: "Lobster", cursive;
+  margin-top: 0;
+  font-size: 2em;
+  color: #f5dfd2;
+}
+
+.aboutMeContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: fit-content;
+  justify-content: space-evenly;
+  margin-bottom: 5em;
+  margin-top: 3em;
+}
+.aboutMeContainer .aboutMeCard {
+  display: flex;
+  text-decoration: none;
+  width: 70%;
+  height: 20em;
+  align-items: center;
+  background-color: #57675d;
+  border-radius: 2em;
+  overflow: hidden;
+  transition: 0.4s;
+}
+@media (max-width: 800px) {
+  .aboutMeContainer .aboutMeCard {
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+.aboutMeContainer .aboutMeCard:hover {
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.425));
+}
+.aboutMeContainer .aboutMeCard img {
+  display: flex;
+  width: fit-content;
+  height: 100%;
+}
+@media (max-width: 800px) {
+  .aboutMeContainer .aboutMeCard img {
+    width: 100%;
+  }
+}
+.aboutMeContainer .aboutMeCard .aboutInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 2em;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .aboutMeContainer .aboutMeCard .aboutInfo {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.aboutMeContainer .aboutMeCard .aboutInfo h3 {
+  display: flex;
+  font-family: "Lobster", cursive;
+  color: #f5dfd2;
+  font-size: 2.5rem;
+  font-weight: initial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media (max-width: 800px) {
+  .aboutMeContainer .aboutMeCard .aboutInfo h3 {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+.aboutMeContainer .aboutMeCard .aboutInfo h4 {
+  display: flex;
+  font-family: "Nixie One", cursive;
+  color: #f5dfd2;
+  font-size: 1.2rem;
+  line-height: 1.4em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+@media (max-width: 800px) {
+  .aboutMeContainer .aboutMeCard .aboutInfo h4 {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+.toTopButton {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  bottom: 1em;
+  right: 1em;
+  width: 1em;
+  height: 1em;
+  border-radius: 60%;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #f5dfd2;
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.425));
+  transition: 0.4s;
+}
+.toTopButton:hover {
+  bottom: 1.1em;
+}
+
+.blogContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: fit-content;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.blogContainer .custom-shape-divider-top-1630864600 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.blogContainer .custom-shape-divider-top-1630864600 svg {
+  position: relative;
+  display: block;
+  width: calc(131% + 1.3px);
+  height: 49px;
+}
+.blogContainer .custom-shape-divider-top-1630864600 .shape-fill {
+  fill: #f25a38;
+}
+.blogContainer .cardBlog {
+  display: flex;
+  text-decoration: none;
+  width: 70%;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #57675d;
+  margin-top: 4em;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-bottom: 3em;
+  border-radius: 2em;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.blogContainer .cardBlog:hover {
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.425));
+}
+.blogContainer .cardBlog .blogImgContainer {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.blogContainer .cardBlog .blogImgContainer .cardBlogFoto {
+  display: flex;
+  height: 100%;
+}
+.blogContainer .cardBlog .cardBlogInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 2em;
+  width: 100%;
+}
+.blogContainer .cardBlog .cardBlogInfo .tituloBlog {
+  display: flex;
+  font-family: "Lobster", cursive;
+  color: #f5dfd2;
+  font-size: 2rem;
+  font-weight: initial;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  background-color: #f25a38;
+}
+.blogContainer .cardBlog .cardBlogInfo .contenidoBlog {
+  display: flex;
+  font-family: "Nixie One", cursive;
+  color: #f5dfd2;
+  font-size: 1rem;
+  font-weight: initial;
+  white-space: pre-wrap;
+}
+
+.tiendaCuadrosContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: fit-content;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.tiendaCuadrosContainer .custom-shape-divider-top-1630864600 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.tiendaCuadrosContainer .custom-shape-divider-top-1630864600 svg {
+  position: relative;
+  display: block;
+  width: calc(131% + 1.3px);
+  height: 49px;
+}
+.tiendaCuadrosContainer .custom-shape-divider-top-1630864600 .shape-fill {
+  fill: #f25a38;
+}
+.tiendaCuadrosContainer .custom-shape-divider-bottom-1630864817 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.tiendaCuadrosContainer .custom-shape-divider-bottom-1630864817 svg {
+  position: relative;
+  display: block;
+  width: calc(112% + 1.3px);
+  height: 38px;
+}
+.tiendaCuadrosContainer .custom-shape-divider-bottom-1630864817 .shape-fill {
+  fill: #f5dfd2;
+}
+.tiendaCuadrosContainer .cardCuadros {
+  display: flex;
+  text-decoration: none;
+  width: 70%;
+  height: 35em;
+  align-items: center;
+  background-color: #f25a38;
+  margin-top: 4em;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-bottom: 3em;
+  border-radius: 2em;
+  overflow: hidden;
+  transition: 0.4s;
+}
+@media (max-width: 900px) {
+  .tiendaCuadrosContainer .cardCuadros {
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+.tiendaCuadrosContainer .cardCuadros:hover {
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.425));
+}
+.tiendaCuadrosContainer .cardCuadros .cardImgContainer {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+@media (max-width: 900px) {
+  .tiendaCuadrosContainer .cardCuadros .cardImgContainer {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.tiendaCuadrosContainer .cardCuadros .cardImgContainer img {
+  display: flex;
+  height: 100%;
+}
+.tiendaCuadrosContainer .cardCuadros .cardCuadrosInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 2em;
+  width: 50%;
+}
+@media (max-width: 900px) {
+  .tiendaCuadrosContainer .cardCuadros .cardCuadrosInfo {
+    width: 90%;
+    justify-content: center;
+  }
+}
+.tiendaCuadrosContainer .cardCuadros .cardCuadrosInfo h3 {
+  display: flex;
+  font-family: "Lobster", cursive;
+  color: #f5dfd2;
+  font-size: 2rem;
+  font-weight: initial;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.tiendaCuadrosContainer .cardCuadros .cardCuadrosInfo h4 {
+  display: flex;
+  font-family: "Nixie One", cursive;
+  color: #f5dfd2;
+  font-size: 1.2rem;
+  font-weight: initial;
+}
+.tiendaCuadrosContainer .cardCuadros .cardCuadrosComprar {
+  display: flex;
+  background-color: #57675d;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 900px) {
+  .tiendaCuadrosContainer .cardCuadros .cardCuadrosComprar {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.tiendaCuadrosContainer .cardCuadros .cardCuadrosComprar h2 {
+  display: flex;
+  font-family: "Lobster", cursive;
+  color: #f5dfd2;
+  font-size: 2rem;
+  font-weight: initial;
+}
+.tiendaCuadrosContainer .cardCuadros .cardCuadrosComprar .cardCuadrosComprarBoton {
+  display: flex;
+  text-decoration: none;
+  font-family: "Nixie One", cursive;
+  padding: 0.5em;
+  font-size: 1.5rem;
+  color: #f5dfd2;
+  background-color: #f25a38;
+  transition: 0.4s;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .tiendaCuadrosContainer .cardCuadros .cardCuadrosComprar .cardCuadrosComprarBoton {
+    margin-bottom: 1em;
+  }
+}
+.tiendaCuadrosContainer .cardCuadros .cardCuadrosComprar .cardCuadrosComprarBoton:hover {
+  color: #f25a38;
+  background-color: #f5dfd2;
+}
+
+.tiendaAccesoriosContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: fit-content;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.tiendaAccesoriosContainer .custom-shape-divider-top-1630864600 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.tiendaAccesoriosContainer .custom-shape-divider-top-1630864600 svg {
+  position: relative;
+  display: block;
+  width: calc(131% + 1.3px);
+  height: 49px;
+}
+.tiendaAccesoriosContainer .custom-shape-divider-top-1630864600 .shape-fill {
+  fill: #f25a38;
+}
+.tiendaAccesoriosContainer .custom-shape-divider-bottom-1630864817 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.tiendaAccesoriosContainer .custom-shape-divider-bottom-1630864817 svg {
+  position: relative;
+  display: block;
+  width: calc(112% + 1.3px);
+  height: 38px;
+}
+.tiendaAccesoriosContainer .custom-shape-divider-bottom-1630864817 .shape-fill {
+  fill: #f5dfd2;
+}
+.tiendaAccesoriosContainer .cardAccesorios {
+  display: flex;
+  text-decoration: none;
+  width: 70%;
+  height: 25em;
+  align-items: center;
+  background-color: #f25a38;
+  margin-top: 4em;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-bottom: 3em;
+  border-radius: 2em;
+  overflow: hidden;
+  transition: 0.4s;
+}
+@media (max-width: 900px) {
+  .tiendaAccesoriosContainer .cardAccesorios {
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+.tiendaAccesoriosContainer .cardAccesorios:hover {
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.425));
+}
+.tiendaAccesoriosContainer .cardAccesorios .cardImgContainer {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  justify-content: left;
+  overflow: hidden;
+}
+@media (max-width: 900px) {
+  .tiendaAccesoriosContainer .cardAccesorios .cardImgContainer {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.tiendaAccesoriosContainer .cardAccesorios .cardImgContainer img {
+  display: flex;
+  height: 100%;
+}
+.tiendaAccesoriosContainer .cardAccesorios .cardAccesoriosInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 2em;
+  width: 50%;
+}
+@media (max-width: 900px) {
+  .tiendaAccesoriosContainer .cardAccesorios .cardAccesoriosInfo {
+    width: 90%;
+    justify-content: center;
+  }
+}
+.tiendaAccesoriosContainer .cardAccesorios .cardAccesoriosInfo h3 {
+  display: flex;
+  font-family: "Lobster", cursive;
+  color: #f5dfd2;
+  font-size: 2rem;
+  font-weight: initial;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.tiendaAccesoriosContainer .cardAccesorios .cardAccesoriosInfo h4 {
+  display: flex;
+  font-family: "Nixie One", cursive;
+  color: #f5dfd2;
+  font-size: 1.2rem;
+  font-weight: initial;
+}
+.tiendaAccesoriosContainer .cardAccesorios .cardAccesoriosComprar {
+  display: flex;
+  background-color: #57675d;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 900px) {
+  .tiendaAccesoriosContainer .cardAccesorios .cardAccesoriosComprar {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.tiendaAccesoriosContainer .cardAccesorios .cardAccesoriosComprar h2 {
+  display: flex;
+  font-family: "Lobster", cursive;
+  color: #f5dfd2;
+  font-size: 2rem;
+  font-weight: initial;
+}
+.tiendaAccesoriosContainer .cardAccesorios .cardAccesoriosComprar .cardAccesoriosComprarBoton {
+  display: flex;
+  text-decoration: none;
+  font-family: "Nixie One", cursive;
+  padding: 0.5em;
+  font-size: 1.5rem;
+  color: #f5dfd2;
+  background-color: #f25a38;
+  transition: 0.4s;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .tiendaAccesoriosContainer .cardAccesorios .cardAccesoriosComprar .cardAccesoriosComprarBoton {
+    margin-bottom: 1em;
+  }
+}
+.tiendaAccesoriosContainer .cardAccesorios .cardAccesoriosComprar .cardAccesoriosComprarBoton:hover {
+  color: #f25a38;
+  background-color: #f5dfd2;
+}
+
+/*# sourceMappingURL=style.css.map */

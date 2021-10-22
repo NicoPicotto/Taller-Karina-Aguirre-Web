@@ -1,0 +1,46 @@
+[
+	{
+		"id": 4,
+		"nombre": "Cuadro: Rostro III",
+		"desc": "Tecnicas Mixtas sobre bastidor de MDF.<br>Medidas: 50x60 cm",
+		"precio": 2500,
+		"img": "../img/cuadro1.jfif",
+		"cantidad": 1
+	},
+
+	{
+		"id": 5,
+		"nombre": "Cuadro: Rostro II",
+		"desc": "Tecnicas Mixtas sobre Bastidor de tela.<br>Medidas: 50x70 cm",
+		"precio": 2300,
+		"img": "../img/cuadro2.jfif",
+		"cantidad": 1
+	},
+
+	{
+		"id": 6,
+		"nombre": "Cuadro: Rostro IV",
+		"desc": "Tecnicas Mixtas sobre bastidor de MDF.<br>Medidas: 30x50 cm",
+		"precio": 2400,
+		"img": "../img/cuadro3.jfif",
+		"cantidad": 1
+	},
+
+	{
+		"id": 7,
+		"nombre": "Amanecer",
+		"desc": "Tecnicas Mixtas sobre bastidor de MDF.<br>Medidas: 40x40 cm",
+		"precio": 2900,
+		"img": "../img/cuadro4.jfif",
+		"cantidad": 1
+	},
+
+	{
+		"id": 8,
+		"nombre": "Violet",
+		"desc": "Tecnicas Mixtas sobre bastidor de tela.<br>Medidas: 40x50 cm",
+		"precio": 2600,
+		"img": "../img/cuadro5.jfif",
+		"cantidad": 1
+	}
+]

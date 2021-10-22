@@ -1,0 +1,28 @@
+[
+	{
+		"id": 9,
+		"nombre": "Accesorio: Posavasos redondos x6",
+		"desc": "Realizados con técnica acrilic pouring y resina epoxi.<br>Medidas: 8cm de diámetro",
+		"precio": 1200,
+		"img": "../img/accesorios1.png",
+		"cantidad": 1
+	},
+
+	{
+		"id": 10,
+		"nombre": "Accesorio: Posavasos cuadrados x6",
+		"desc": "Realizados con técnica acrilic pouring y resina epoxi.<br>Medidas: 8cm de diámetro",
+		"precio": 1200,
+		"img": "../img/accesorios2.png",
+		"cantidad": 1
+	},
+
+	{
+		"id": 11,
+		"nombre": "Accesorio: Jarrón intervenido",
+		"desc": "Realizados con técnicas mixtas.<br>Medidas: 25cm de alto x 15cm de diámetro",
+		"precio": 2300,
+		"img": "../img/accesorios3.jpg",
+		"cantidad": 1
+	}
+]
