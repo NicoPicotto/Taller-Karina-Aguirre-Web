@@ -3,7 +3,9 @@ $("#botonSuscripcion").click(() => {
 	if ($("#news").val() == "") {
 		Toastify({
 			text: "🤔 No ingresaste ningún mail",
-			backgroundColor: "red",
+			style: {
+				background: "red",
+			},
 			className: "info",
 		}).showToast();
 	} else {
