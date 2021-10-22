@@ -78,11 +78,12 @@ nav {
 		}
 
 		.icons {
-			i {
+			a {
 				font-size: 1.5em;
 				display: none;
-				cursor: pointer;
 				transition: 0.3s;
+				text-decoration: none;
+				color: $color-secundario;
 
 				&:hover {
 					color: $color-terciario;

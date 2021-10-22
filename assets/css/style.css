@@ -72,17 +72,18 @@ nav .mainMenu .closeMenu {
     right: 1em;
   }
 }
-nav .mainMenu .icons i {
+nav .mainMenu .icons a {
   font-size: 1.5em;
   display: none;
-  cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
+  color: #f5dfd2;
 }
-nav .mainMenu .icons i:hover {
+nav .mainMenu .icons a:hover {
   color: #57675d;
 }
 @media (max-width: 800px) {
-  nav .mainMenu .icons i {
+  nav .mainMenu .icons a {
     display: inline-block;
     margin: 0.5em;
   }
