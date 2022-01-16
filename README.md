@@ -8,7 +8,7 @@ _En este proyecto se creó una aplicación tipo e-commerce para una artista loca
 
 ![1](https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/be765d134212265.61d1970e2a75e.jpg)
 
-[Podés ver el sitio en vivo haciendo click aquí](https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/be765d134212265.61d1970e2a75e.jpg)
+[Podés ver el sitio en vivo haciendo click aquí](https://amazing-mestorf-02bced.netlify.app/)
 
 ## Construido con 🛠️
  * HTML
